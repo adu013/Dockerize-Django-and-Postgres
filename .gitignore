@@ -1,0 +1,14 @@
+# Environment
+env
+
+# Mac files (DS_Store)I’m
+.DS_Store
+
+# Local DB
+db.sqlite3
+
+# pycache folder
+__pycache__
+
+# pyc files
+*.pyc
