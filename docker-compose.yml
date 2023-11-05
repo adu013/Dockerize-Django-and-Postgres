@@ -14,3 +14,17 @@ services:
       - "8000:8000"
     env_file:
       - ./.env.dev
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=my_project_user
+      - POSTGRES_PASSWORD=my_project_pwd
+      - POSTGRES_DB=my_project_db
+
+volumes:
+  postgres_data:
