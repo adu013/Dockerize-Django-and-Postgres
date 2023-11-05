@@ -33,3 +33,9 @@ docker compose exec djano python manage.py makemigrations
 ```bash
 docker compose exec django python manage.py migrate
 ```
+
+#### Work on Postgres DB
+
+```bash
+docker compose exec db psql --username=my_project_user --dbname=my_project_db
+```
